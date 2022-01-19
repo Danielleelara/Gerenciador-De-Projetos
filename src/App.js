@@ -2,6 +2,7 @@ import './App.css';
 import SayMyName from './Components/SayMyName';
 import Pessoa from './Components/Pessoa';
 import Frase from './Components/Frase';
+import List from './Components/List';
 
 function App() {
 
@@ -25,6 +26,10 @@ function App() {
       idade="45"
       profissao="Vendedora"
       foto= "https://ichef.bbci.co.uk/news/800/cpsprodpb/2A97/production/_100630901_mulher.jpg.webp"
+      />
+      <List
+      nome= 'Marcia'
+      tipo= 'Cartão'
       />
     </div>
   );
