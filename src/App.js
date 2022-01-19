@@ -1,5 +1,5 @@
 import './App.css';
-import Evento from './Components/Evento';
+import Evento from './Components/Evento/Evento';
 import Form from './Components/Form';
 
 function App() {
@@ -9,8 +9,7 @@ function App() {
   return (
     <div className="App">
       <h1>Testando eventos</h1>
-      <Evento numero='1'/>
-      <Evento numero='2'/>
+      <Evento />
       <Form/>
     </div>
   );
