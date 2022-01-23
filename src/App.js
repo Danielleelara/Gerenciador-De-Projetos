@@ -1,21 +1,19 @@
 import React from 'react';
 
 import './App.css';
-import {BrowserRouter as Router, Switch, Route, Link } from 'react-router-dom';
+import {BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 import Home from './Pages/Home';
 import Empresa from './Pages/Empresa';
 import Contato from './Pages/Contato';
+import NavBar from './Components/Layout/NavBar';
+import Footer from './Components/Layout/Footer';
 
 
 function App() {
  
   return (
     <Router>
-      <ul>
-        <li><Link to="/">Home</Link></li>
-        <li><Link to="/empresa">Empresa</Link></li>
-        <li><Link to="/contato">Contato</Link></li>
-      </ul>
+      <NavBar />
       <Switch>
         <Route exact path="/" >
           <Home />
@@ -27,6 +25,7 @@ function App() {
           <Contato />
         </Route>
      </Switch>
+     <Footer/>
     </Router>
   );
 }
