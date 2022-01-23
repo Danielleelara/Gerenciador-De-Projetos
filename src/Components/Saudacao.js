@@ -9,7 +9,7 @@ const Saudacao = ({nome}) => {
 
     return ( 
        <>
-       {nome && <p>{gerarSaudacao(nome)} : "cachorro"</p>}
+       {nome && <p>{gerarSaudacao(nome)}</p>}
        </> 
      );
 }
